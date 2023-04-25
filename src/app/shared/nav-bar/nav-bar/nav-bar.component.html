@@ -1,0 +1,75 @@
+<!--TODO NavBar -->
+<nav class="relative container mx-auto p-6">
+  <!-- TODO Flex container -->
+  <div class="flex justify-between">
+    <!-- TODO LOGO -->
+    <div class="pt-2 mt-1">
+      <a href="#">
+        <img
+          src="../../../../assets/logo.svg"
+          class="transition duration-125 ease-in-out hover:scale-125"
+          alt=""
+        />
+      </a>
+    </div>
+
+    <!-- TODO Menu Items -->
+    <div class="hidden md:flex space-x-6 ml-2 mr-5 mt-2">
+      <a
+        href="#"
+        class="hover:text-darkGrayishBlue transition duration-125 ease-in-out hover:scale-110"
+        >Pricing</a
+      >
+      <a
+        href="#"
+        class="hover:text-darkGrayishBlue transition duration-125 ease-in-out hover:scale-110"
+        >Product</a
+      >
+      <a
+        href="#"
+        class="hover:text-darkGrayishBlue transition duration-125 ease-in-out hover:scale-110"
+        >About Us</a
+      >
+      <a
+        href="#"
+        class="hover:text-darkGrayishBlue transition duration-125 ease-in-out hover:scale-110"
+        >Careers</a
+      >
+      <a
+        href="#"
+        class="hover:text-darkGrayishBlue transition duration-125 ease-in-out hover:scale-110"
+        >Community</a
+      >
+    </div>
+    <a
+      href=""
+      class="hidden p-3 px-6 pt-2 text-white bg-brightRed rounded-full baseline hover:bg-brightRedLight md:block transition duration-300 ease-in-out hover:scale-125"
+      >Get Started</a
+    >
+
+    <!-- ! Hamburguer MENU -->
+    <button
+    (click)="toggleHamburger()"
+    #menuBtn
+    id="menu-btn"
+    class="block hamburger md:hidden focus:outline-none">
+      <span class="hamburger-top"></span>
+      <span class="hamburger-middle"></span>
+      <span class="hamburger-bottom"></span>
+    </button>
+  </div>
+  <!-- !MOBILE MENU -->
+  <div class="md:hidden">
+    <div
+      id="menu"
+      #menu
+      class="transition ease-in-out delay-150  absolute hidden flex-col items-center self-end py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md"
+    >
+      <a href="#">Pricing</a>
+      <a href="#">Product</a>
+      <a href="#">About Us</a>
+      <a href="#">Careers</a>
+      <a href="#">Community</a>
+    </div>
+  </div>
+</nav>
